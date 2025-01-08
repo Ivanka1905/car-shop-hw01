@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./form-style.css" />
+</head>
+
+<body>
+    <a href="./index.html">Back</a>
+    <form>
+        <fieldset>
+            <legend>Personal info</legend>
+            <div>
+                <lable>First Name <input type="text" autofocus placeholder="Іван" /></lable>
+            </div>
+            <div>
+                <lable>Last Name <input type="text" placeholder="Іванов" /></lable>
+            </div>
+            <div>
+                <label>Birthday <input type="datetime-local" /></label>
+            </div>
+            <div>
+                <p>Gender</p>
+                <label>Male<input type="radio" name="gender" value="male" /></label>
+                <label>Female<input type="radio" name="gender" value="female" /></label>
+            </div>
+            <div><label for="drive-exp">Drive experience </label><select name="drive-experience" id="drive-exp">
+                    <option value="less than a year">less than a year</option>
+                    <option value="from 1 year to 5">from 1 year to 5</option>
+                    <option value="over 5 years">over 5 years</option>
+                    <option value="no experience yet">no experience yet</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contacts</legend>
+            <div><label>Email <input type="email" name="email" placeholder="example@gmail.com"></label></div>
+            <div><label>Phone <input type="tel" name="phone" placeholder="+380112233444"></label></div>
+            <div><label><input type="text"></label></div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
