@@ -14,20 +14,21 @@
         <fieldset>
             <legend>Personal info</legend>
             <div>
-                <lable>First Name <input type="text" autofocus placeholder="Іван" /></lable>
+                <lable for="name">First Name </lable><input id="name" type="text" autofocus placeholder="Ivan" />
             </div>
             <div>
-                <lable>Last Name <input type="text" placeholder="Іванов" /></lable>
+                <lable for="last-name">Last Name </lable><input id="last-name" type="text" placeholder="Ivanov" />
             </div>
             <div>
-                <label>Birthday <input type="datetime-local" /></label>
+                <label for="birthday">Birthday </label><input id="birthday" type="datetime-local" />
             </div>
             <div>
                 <p>Gender</p>
                 <label>Male<input type="radio" name="gender" value="male" /></label>
                 <label>Female<input type="radio" name="gender" value="female" /></label>
             </div>
-            <div><label for="drive-exp">Drive experience </label><select name="drive-experience" id="drive-exp">
+            <div>
+                <label for="drive-exp">Drive experience </label><select name="drive-experience" id="drive-exp">
                     <option value="less than a year">less than a year</option>
                     <option value="from 1 year to 5">from 1 year to 5</option>
                     <option value="over 5 years">over 5 years</option>
@@ -37,9 +38,19 @@
         </fieldset>
         <fieldset>
             <legend>Contacts</legend>
-            <div><label>Email <input type="email" name="email" placeholder="example@gmail.com"></label></div>
-            <div><label>Phone <input type="tel" name="phone" placeholder="+380112233444"></label></div>
-            <div><label><input type="text"></label></div>
+            <div>
+                <label>Email
+                    <input type="email" name="email" placeholder="example@gmail.com" /></label>
+            </div>
+            <div>
+                <label>Phone
+                    <input type="tel" name="phone" minlength="12" maxlength="13" placeholder="+380112233444" /></label>
+            </div>
+            <div>
+                <label>
+                    <textarea name="address" rows="4" id="address" placeholder="Enter your address here... "></textarea>
+                </label>
+            </div>
         </fieldset>
     </form>
 </body>
