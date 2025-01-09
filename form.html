@@ -47,9 +47,44 @@
                     <input type="tel" name="phone" minlength="12" maxlength="13" placeholder="+380112233444" /></label>
             </div>
             <div>
-                <label>
+                <label>Address
                     <textarea name="address" rows="4" id="address" placeholder="Enter your address here... "></textarea>
                 </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Car info</legend>
+            <div>
+                <label for="brand">Brand </label><select name="brand" id="brand">
+                    <option value="bmw">BMW</option>
+                    <option value="ford">Ford</option>
+                    <option value="toyota">Toyota</option>
+                </select>
+            </div>
+            <div>
+                <label for="model">Model </label><select name="model" id="model">
+                    <optgroup label="BMW">
+                        <option value="BMW-X6">BMW X6</option>
+                        <option value="BMW-7">BMW 7</option>
+                    </optgroup>
+                    <optgroup label="Ford">
+                        <option value="FORD-FOCUS">FORD FOCUS</option>
+                        <option value="Ford-Kuga">Ford Kuga</option>
+                    </optgroup>
+                    <optgroup label="Toyota">
+                        <option value="Land-Cruiser">Toyota Land Cruiser Prado</option>
+                        <option value="Toyota-RAV4-Hybrid">Toyota RAV4 Hybrid</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>Used <input type="checkbox" name="used" id="used" value="used" /></label>
+            </div>
+            <div>
+                <label><input type="text" /></label>
+            </div>
+            <div>
+                <label><input type="text" /></label>
             </div>
         </fieldset>
     </form>
