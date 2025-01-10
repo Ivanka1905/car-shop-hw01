@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="./form-style.css" />
 </head>
 
 <body>
@@ -14,7 +13,8 @@
         <fieldset>
             <legend>Personal info</legend>
             <div>
-                <lable for="name">First Name </lable><input id="name" type="text" autofocus placeholder="Ivan" />
+                <lable for="name">First Name </lable><input id="name" type="text" autofocus placeholder="Ivan"
+                    required />
             </div>
             <div>
                 <lable for="last-name">Last Name </lable><input id="last-name" type="text" placeholder="Ivanov" />
@@ -44,7 +44,8 @@
             </div>
             <div>
                 <label>Phone
-                    <input type="tel" name="phone" minlength="12" maxlength="13" placeholder="+380112233444" /></label>
+                    <input type="tel" name="phone" minlength="12" maxlength="13" placeholder="+380112233444"
+                        required /></label>
             </div>
             <div>
                 <label>Address
@@ -81,12 +82,20 @@
                 <label>Used <input type="checkbox" name="used" id="used" value="used" /></label>
             </div>
             <div>
-                <label><input type="text" /></label>
+                <p>Color</p>
+                <label>Red<input type="radio" name="color" value="red" /></label>
+                <label>Black<input type="radio" name="color" value="black" /></label>
+                <label>Blue<input type="radio" name="color" value="blue" /></label>
+                <label>White<input type="radio" name="color" value="white" /></label>
+                <label>Grey<input type="radio" name="color" value="grey" /></label>
             </div>
             <div>
-                <label><input type="text" /></label>
+                <label>Price
+                    <input type="range" name="price" min="10000" max="100000" step="5000" /></label>
             </div>
         </fieldset>
+        <button type="reset">Cancel</button>
+        <button type="submit">Ok</button>
     </form>
 </body>
 
