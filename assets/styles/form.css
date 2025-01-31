@@ -1,0 +1,77 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+[href="./index.html"] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: rgb(152, 152, 231);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 3px rgb(53, 53, 56);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  width: 300px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* justify-content: space-around; */
+  /* align-items: stretch; */
+}
+
+fieldset > legend {
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+fieldset > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+[type="range"] {
+  width: 160px;
+}
+
+.form-button {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-button > button {
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
