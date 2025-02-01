@@ -93,13 +93,17 @@
                 <div class="price">
                     <div>Price</div>
                     <label>
-                        <input type="range" name="price" min="10" max="80" step="10" /></label>
-                    <div class="range-ticks">
-                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                    </div>
-                    <div class="range-numbers">
-                        <span>10</span><span>20</span><span>30</span><span>40</span><span>50</span><span>60</span><span>70</span><span>80</span>
-                    </div>
+                        <input type="range" min="10" max="80" step="10" list="tickmarks" />
+                        <datalist id="tickmarks">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="60">60</option>
+                            <option value="70">70</option>
+                            <option value="80">80</option>
+                        </datalist></label>
                 </div>
             </fieldset>
         </div>
